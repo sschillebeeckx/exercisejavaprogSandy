@@ -146,6 +146,7 @@ public class FileCompanyRepository implements CompanyRepository {
     public void writeAllCompanies() throws IOException {
         PrintWriter pw = new PrintWriter(new FileWriter(pathToFile));
         Collections.sort(companies,new Company.CompanyByNumberComparator());
+        System.out.println(companies);
         for (Company c : companies) {
             pw.println(c.getName());
         }

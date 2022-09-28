@@ -47,9 +47,11 @@ public class FileCompanyRepositoryTest {
 
      @Test
     void addCompanyWorks() throws CompanyAlreadyExistsException, CompanyNotFoundException {
+        int linesBefore= ((FileCompanyRepository)cr).readFile().size();
         cr.addCompany(new Company("new company"));
+        int linesAfter= ((FileCompanyRepository)cr).readFile().size();
+        assertEquals(1,linesAfter-linesBefore);
         Company c = cr.findCompany("new company");
-        assertNotNull(c);
         cr.deleteCompany(c.getCompanyNumber());
      }
 

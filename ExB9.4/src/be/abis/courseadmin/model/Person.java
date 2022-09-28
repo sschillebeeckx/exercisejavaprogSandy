@@ -104,8 +104,8 @@ public class Person implements Instructor, CourseParticipant, Comparable<CourseP
     }
 
     @Override
-    public int compareTo(CourseParticipant cp) {
-        return this.personNumber-((Person)cp).personNumber;
+    public int compareTo(CourseParticipant p) {
+        return this.personNumber-((Person)p).personNumber;
     }
 
     /** Prints all the person's information**/

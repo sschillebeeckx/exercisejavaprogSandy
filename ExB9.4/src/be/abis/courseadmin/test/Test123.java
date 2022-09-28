@@ -53,7 +53,7 @@ public class Test123 {
             sortedLastName.forEach(System.out::println);
 
             System.out.println("\n------------------------ExB9.3  Participant List sorted on last and first name----------------------------------");
-            List<CourseParticipant> sortedLastAndFirstName = es.sortParticipantsByLastandFirstName(enrolments);
+            List<CourseParticipant> sortedLastAndFirstName = es.sortParticipantsByLastAndFirstName(enrolments);
             sortedLastAndFirstName.forEach(System.out::println);
 
         } catch (CompanyNotFoundException cnf) {

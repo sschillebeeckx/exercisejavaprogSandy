@@ -10,5 +10,6 @@ public class Test {
         double totalPrice=c.calculateTotalPrice();
         System.out.println("The total price is " + totalPrice +".");
 
+
     }
 }

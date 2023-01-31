@@ -42,7 +42,7 @@ public class Test {
             System.out.println(publicSession.findAbisParticipants());
 
         } catch (CompanyNotFoundException cnf) {
-            cnf.printStackTrace();
+            System.out.println(cnf.getMessage());
         }
 
 

@@ -98,7 +98,7 @@ public class Person implements Instructor, CourseParticipant {
         }
     }
 
-    public String toString(){
+    public String toString() {
         return firstName + " " + lastName;
     }
 

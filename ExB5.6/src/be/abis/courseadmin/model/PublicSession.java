@@ -12,7 +12,7 @@ public class PublicSession extends Session {
         super(course, startDate, location, instructor);
     }
 
-    public double calculatePrice(){
+    public double calculatePrice()  {
         return 300.0;
     }
 

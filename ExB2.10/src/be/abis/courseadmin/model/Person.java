@@ -8,10 +8,10 @@ public class Person {
     private String lastName;
     private Company company;
     private String[] hobbies=new String[10];
-    private int hobbiesIndex;
+    private int numberOfHobbies=0;
 
     public Person(String firstName, String lastName) {
-        personNumber=++counter;
+        this.personNumber=++counter;
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -70,8 +70,8 @@ public class Person {
     }
 
     public void addHobby(String hobby){
-        hobbies[hobbiesIndex]=hobby;
-        hobbiesIndex++;
+        hobbies[numberOfHobbies]=hobby;
+        numberOfHobbies++;
     }
 
     public void addHobbies(String... hobbies){
@@ -87,6 +87,7 @@ public class Person {
 
     public void attendCourse(Course c){
         System.out.println(firstName + " is attending a " + c.getTitle() + " course.");
+        System.out.println("Price of the course is " + c.calculateTotalPrice() +" .");
     }
 
 }

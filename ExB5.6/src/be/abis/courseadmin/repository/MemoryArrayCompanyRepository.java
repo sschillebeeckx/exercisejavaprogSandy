@@ -36,7 +36,7 @@ public class MemoryArrayCompanyRepository implements CompanyRepository {
                 foundCompany=c;
             }
         }
-        if (foundCompany==null)throw new CompanyNotFoundException("Company " + name + " can not be found.");
+        if (foundCompany==null) throw new CompanyNotFoundException("Company " + name + " can not be found.");
         return foundCompany;
     }
 

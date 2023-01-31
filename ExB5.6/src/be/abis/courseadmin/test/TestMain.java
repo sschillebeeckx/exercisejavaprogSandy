@@ -5,7 +5,7 @@ import be.abis.courseadmin.model.Company;
 import be.abis.courseadmin.repository.CompanyRepository;
 import be.abis.courseadmin.repository.MemoryArrayCompanyRepository;
 
-public class Test {
+public class TestMain {
 
     public static void main(String[] args) {
 

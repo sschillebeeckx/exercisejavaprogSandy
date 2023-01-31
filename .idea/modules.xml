@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExB1.1/ExB1.1.iml" filepath="$PROJECT_DIR$/ExB1.1/ExB1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.10/ExB1.10.iml" filepath="$PROJECT_DIR$/ExB1.10/ExB1.10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.2/ExB1.2.iml" filepath="$PROJECT_DIR$/ExB1.2/ExB1.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.3/ExB1.3.iml" filepath="$PROJECT_DIR$/ExB1.3/ExB1.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.4/ExB1.4.iml" filepath="$PROJECT_DIR$/ExB1.4/ExB1.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.5/ExB1.5.iml" filepath="$PROJECT_DIR$/ExB1.5/ExB1.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.6/ExB1.6.iml" filepath="$PROJECT_DIR$/ExB1.6/ExB1.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.7/ExB1.7.iml" filepath="$PROJECT_DIR$/ExB1.7/ExB1.7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.8/ExB1.8.iml" filepath="$PROJECT_DIR$/ExB1.8/ExB1.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB1.9/ExB1.9.iml" filepath="$PROJECT_DIR$/ExB1.9/ExB1.9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.1/ExB2.1.iml" filepath="$PROJECT_DIR$/ExB2.1/ExB2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.10/ExB2.10.iml" filepath="$PROJECT_DIR$/ExB2.10/ExB2.10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.2/ExB2.2.iml" filepath="$PROJECT_DIR$/ExB2.2/ExB2.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.3/ExB2.3.iml" filepath="$PROJECT_DIR$/ExB2.3/ExB2.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.4/ExB2.4.iml" filepath="$PROJECT_DIR$/ExB2.4/ExB2.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.5/ExB2.5.iml" filepath="$PROJECT_DIR$/ExB2.5/ExB2.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.6/ExB2.6.iml" filepath="$PROJECT_DIR$/ExB2.6/ExB2.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.7/ExB2.7.iml" filepath="$PROJECT_DIR$/ExB2.7/ExB2.7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.8/ExB2.8.iml" filepath="$PROJECT_DIR$/ExB2.8/ExB2.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB2.9/ExB2.9.iml" filepath="$PROJECT_DIR$/ExB2.9/ExB2.9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB3.2/ExB3.2.iml" filepath="$PROJECT_DIR$/ExB3.2/ExB3.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB3.3/ExB3.3.iml" filepath="$PROJECT_DIR$/ExB3.3/ExB3.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.1/ExB4.1.iml" filepath="$PROJECT_DIR$/ExB4.1/ExB4.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.10/ExB4.10.iml" filepath="$PROJECT_DIR$/ExB4.10/ExB4.10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.11/ExB4.11.iml" filepath="$PROJECT_DIR$/ExB4.11/ExB4.11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.12/ExB4.12.iml" filepath="$PROJECT_DIR$/ExB4.12/ExB4.12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.12JUnit/ExB4.12JUnit.iml" filepath="$PROJECT_DIR$/ExB4.12JUnit/ExB4.12JUnit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.2/ExB4.2.iml" filepath="$PROJECT_DIR$/ExB4.2/ExB4.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.3/ExB4.3.iml" filepath="$PROJECT_DIR$/ExB4.3/ExB4.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.4/ExB4.4.iml" filepath="$PROJECT_DIR$/ExB4.4/ExB4.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.5/ExB4.5.iml" filepath="$PROJECT_DIR$/ExB4.5/ExB4.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.6/ExB4.6.iml" filepath="$PROJECT_DIR$/ExB4.6/ExB4.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.7/ExB4.7.iml" filepath="$PROJECT_DIR$/ExB4.7/ExB4.7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.8/ExB4.8.iml" filepath="$PROJECT_DIR$/ExB4.8/ExB4.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB4.9/ExB4.9.iml" filepath="$PROJECT_DIR$/ExB4.9/ExB4.9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB5.1/ExB5.1.iml" filepath="$PROJECT_DIR$/ExB5.1/ExB5.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB5.2/ExB5.2.iml" filepath="$PROJECT_DIR$/ExB5.2/ExB5.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB5.3/ExB5.3.iml" filepath="$PROJECT_DIR$/ExB5.3/ExB5.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB5.4/ExB5.4.iml" filepath="$PROJECT_DIR$/ExB5.4/ExB5.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB5.5/ExB5.5.iml" filepath="$PROJECT_DIR$/ExB5.5/ExB5.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB5.6/ExB5.6.iml" filepath="$PROJECT_DIR$/ExB5.6/ExB5.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.1/ExB6.1.iml" filepath="$PROJECT_DIR$/ExB6.1/ExB6.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.2/ExB6.2.iml" filepath="$PROJECT_DIR$/ExB6.2/ExB6.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.3/ExB6.3.iml" filepath="$PROJECT_DIR$/ExB6.3/ExB6.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.4/ExB6.4.iml" filepath="$PROJECT_DIR$/ExB6.4/ExB6.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.5/ExB6.5.iml" filepath="$PROJECT_DIR$/ExB6.5/ExB6.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.6/ExB6.6.iml" filepath="$PROJECT_DIR$/ExB6.6/ExB6.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.7/ExB6.7.iml" filepath="$PROJECT_DIR$/ExB6.7/ExB6.7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.8/ExB6.8.iml" filepath="$PROJECT_DIR$/ExB6.8/ExB6.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB6.9/ExB6.9.iml" filepath="$PROJECT_DIR$/ExB6.9/ExB6.9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB7.1/ExB7.1.iml" filepath="$PROJECT_DIR$/ExB7.1/ExB7.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB7.2/ExB7.2.iml" filepath="$PROJECT_DIR$/ExB7.2/ExB7.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB8.1/ExB8.1.iml" filepath="$PROJECT_DIR$/ExB8.1/ExB8.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB9.1/ExB9.1.iml" filepath="$PROJECT_DIR$/ExB9.1/ExB9.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB9.2/ExB9.2.iml" filepath="$PROJECT_DIR$/ExB9.2/ExB9.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB9.3/ExB9.3.iml" filepath="$PROJECT_DIR$/ExB9.3/ExB9.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExB9.4/ExB9.4.iml" filepath="$PROJECT_DIR$/ExB9.4/ExB9.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVAPROG.iml" filepath="$PROJECT_DIR$/JAVAPROG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+    </modules>
+  </component>
+</project>

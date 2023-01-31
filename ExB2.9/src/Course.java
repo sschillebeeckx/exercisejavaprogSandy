@@ -39,7 +39,7 @@ public class Course {
         System.out.println("Total price is: " +this.calculateTotalPrice() + "€.");
     }
 
-    double calculateTotalPrice(){
+    private double calculateTotalPrice(){
         return numberOfDays*pricePerDay;
     }
 

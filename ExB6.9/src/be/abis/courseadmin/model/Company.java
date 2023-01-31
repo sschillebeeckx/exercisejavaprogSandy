@@ -5,7 +5,7 @@ import be.abis.courseadmin.exception.PriceTooLowException;
 
 import java.util.Comparator;
 
-public class Company implements Comparable<Company> {
+public class Company implements Comparable<Company>{
 
     private int companyNumber;
     private String name;

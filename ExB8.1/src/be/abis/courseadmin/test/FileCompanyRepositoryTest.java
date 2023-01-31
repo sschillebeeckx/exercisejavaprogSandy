@@ -5,6 +5,7 @@ import be.abis.courseadmin.exception.CompanyNotFoundException;
 import be.abis.courseadmin.model.Company;
 import be.abis.courseadmin.repository.CompanyRepository;
 import be.abis.courseadmin.repository.FileCompanyRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -13,12 +14,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FileCompanyRepositoryTest {
 
-    CompanyRepository cr= new FileCompanyRepository();
+    CompanyRepository cr;
 
-   /* @BeforeEach
+   @BeforeEach
     void setUp(){
         cr = new FileCompanyRepository();
-    }*/
+    }
 
     @Test
     void totalCompaniesInFileIs5(){
@@ -42,7 +43,7 @@ public class FileCompanyRepositoryTest {
 
     @Test
     void companySmilsIsNotInList() throws CompanyNotFoundException {
-        assertThrows(CompanyNotFoundException.class,()->cr.findCompany("smils"));
+        assertThrows(CompanyNotFoundException.class, ()->cr.findCompany(1));
     }
 
      @Test

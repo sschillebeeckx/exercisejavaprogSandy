@@ -6,6 +6,10 @@ public class Course {
     private int numberOfDays;
     private double pricePerDay;
 
+    public Course(){
+
+    }
+
     public Course(String title, int numberOfDays, double pricePerDay){
         this.title=title;
         this.numberOfDays=numberOfDays;
@@ -48,5 +52,6 @@ public class Course {
     public double calculateTotalPrice(int reduction){
         return this.calculateTotalPrice()*(1-reduction/100.);
     }
+
 
 }

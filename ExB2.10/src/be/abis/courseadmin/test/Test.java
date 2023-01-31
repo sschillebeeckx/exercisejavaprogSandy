@@ -38,6 +38,7 @@ public class Test {
         System.out.println("\n------------------------Hobbies----------------------------------");
         p1.addHobby("soccer");
         p2.addHobbies("gaming","walking","cooking");
+        p1.addHobby("skiing");
         p3.addHobbies("soccer","dancing");
         for(Person p:persons){
             System.out.println(p.getFirstName() + "'s hobbies are:");
@@ -46,8 +47,5 @@ public class Test {
             }
         }
 
-
-        String s = StringUtils.capitalize("hello");
-        System.out.println(s);
     }
 }

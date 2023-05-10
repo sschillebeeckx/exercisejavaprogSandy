@@ -2,7 +2,7 @@ package be.abis.demo.model;
 
 public class Instructor {
 
-    private String firstName;
+    protected String firstName;
     private Gender gender;
     private int startAge=0;
     private int age;
@@ -12,12 +12,12 @@ public class Instructor {
 
     private static int maxYearsOfSeniority=35;
 
-    public Instructor(){
+   /*public Instructor(){
         System.out.println("instructor created");
-    }
+    }*/
 
     public Instructor(String firstName, Gender gender, int age, double monthlyGrossSalary){
-        this();
+       // this();
         this.firstName=firstName;
         this.gender=gender;
         this.age=age;
@@ -90,6 +90,14 @@ public class Instructor {
         this.address = address;
     }
 
+    public static int getMaxYearsOfSeniority() {
+        return maxYearsOfSeniority;
+    }
+
+    public static void setMaxYearsOfSeniority(int maxYearsOfSeniority) {
+        Instructor.maxYearsOfSeniority = maxYearsOfSeniority;
+    }
+
     public double calculateNetSalary(){
         double yearlyGrossSalary=monthlyGrossSalary*12;
         //System.out.println("monthly gross salary is " + salary);
@@ -117,7 +125,7 @@ public class Instructor {
     }
 
 
-    void printInfo(){
+    public void printInfo(){
         String personalPronoun="";
         String reflexivePronoun="";
         String posessivePronoun="";
@@ -152,11 +160,5 @@ public class Instructor {
         System.out.println(firstName + " is teaching for " + numberOfDays +" days." );
     }
 
-    public static int getMaxYearsOfSeniority() {
-        return maxYearsOfSeniority;
-    }
 
-    public static void setMaxYearsOfSeniority(int maxYearsOfSeniority) {
-        Instructor.maxYearsOfSeniority = maxYearsOfSeniority;
-    }
 }

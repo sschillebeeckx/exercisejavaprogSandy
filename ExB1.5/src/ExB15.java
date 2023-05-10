@@ -1,11 +1,11 @@
 public class ExB15 {
 
     public static void main(String[] args) {
-        String firstName="Sandy";
+        String firstName="Bob";
         int startAge=23;
-        int age=44;
+        int age=43;
         double monthlyGrossStartSalary=2700.;
-        boolean senior=true;
+        boolean senior=false;
 
         int loopAge=startAge;
         double salary=monthlyGrossStartSalary;
@@ -18,7 +18,7 @@ public class ExB15 {
             //System.out.println("monthly gross salary is " + salary);
             //System.out.println("yearly gross salary is " + grossSalary);
 
-            double taxRate=0;
+            /*double taxRate=0;
             if (grossSalary<13870){
                 taxRate=25;
             } else if (grossSalary>=13870 && grossSalary<24480){
@@ -27,7 +27,19 @@ public class ExB15 {
                 taxRate=45;
             } else {
                 taxRate=50;
+            }*/
+
+            double taxRate=0;
+            if (grossSalary<15200){
+                taxRate=25;
+            } else if (grossSalary<26830){
+                taxRate=40;
+            } else if (grossSalary<46440){
+                taxRate=45;
+            } else {
+                taxRate=50;
             }
+
             //System.out.println("taxRate is " + taxRate);
 
              netSalary = salary*(1-taxRate/100.);

@@ -11,7 +11,7 @@ public class ExB14 {
 
         double yearlyGrossSalary=monthlyGrossSalary*12;
 
-        double taxRate=0;
+        /*double taxRate=0;
         if (yearlyGrossSalary<13870){
             taxRate=25;
         } else if (yearlyGrossSalary>=13870 && yearlyGrossSalary<24480){
@@ -20,7 +20,19 @@ public class ExB14 {
             taxRate=45;
         } else {
             taxRate=50;
+        }*/
+
+        double taxRate=0;
+        if (yearlyGrossSalary<15200){
+            taxRate=25;
+        } else if (yearlyGrossSalary<26830){
+            taxRate=40;
+        } else if (yearlyGrossSalary<46440){
+            taxRate=45;
+        } else {
+            taxRate=50;
         }
+
 
         double netSalary = monthlyGrossSalary*(1-taxRate/100);
 

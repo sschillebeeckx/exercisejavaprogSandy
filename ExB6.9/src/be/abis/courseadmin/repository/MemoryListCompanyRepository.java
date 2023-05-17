@@ -18,6 +18,10 @@ public class MemoryListCompanyRepository implements CompanyRepository {
         companies.add(new Company(5,"CogniTIC"));
     }
 
+    public List<Company> findAllCompanies() {
+        return companies;
+    }
+
     public List<Company> getCompanies() {
         return companies;
     }

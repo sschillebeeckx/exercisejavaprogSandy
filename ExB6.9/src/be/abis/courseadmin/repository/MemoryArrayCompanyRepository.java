@@ -3,6 +3,9 @@ package be.abis.courseadmin.repository;
 import be.abis.courseadmin.exception.CompanyNotFoundException;
 import be.abis.courseadmin.model.Company;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MemoryArrayCompanyRepository implements CompanyRepository {
 
     private Company[] companies = new Company[5];
@@ -14,6 +17,12 @@ public class MemoryArrayCompanyRepository implements CompanyRepository {
         companies[3]=new Company(4,"TTL");
         companies[4]=new Company(5,"CogniTIC");
     }
+
+    @Override
+    public List<Company> findAllCompanies() {
+        return Arrays.asList(companies);
+    }
+
 
     @Override
     public Company findCompany(int id) throws CompanyNotFoundException {
@@ -54,4 +63,6 @@ public class MemoryArrayCompanyRepository implements CompanyRepository {
     public void deleteCompany(int id) {
 
     }
+
+
 }

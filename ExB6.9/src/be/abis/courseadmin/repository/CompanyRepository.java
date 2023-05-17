@@ -3,6 +3,8 @@ package be.abis.courseadmin.repository;
 import be.abis.courseadmin.exception.CompanyNotFoundException;
 import be.abis.courseadmin.model.Company;
 
+import java.util.List;
+
 public interface CompanyRepository {
 
     Company findCompany(int id) throws CompanyNotFoundException;
@@ -11,4 +13,5 @@ public interface CompanyRepository {
     void updateCompany(Company c) throws CompanyNotFoundException;
     void deleteCompany(int id) throws CompanyNotFoundException;
 
+    List<Company> findAllCompanies();
 }

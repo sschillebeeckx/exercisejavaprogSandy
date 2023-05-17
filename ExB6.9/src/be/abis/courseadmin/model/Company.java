@@ -39,11 +39,6 @@ public class Company implements Comparable<Company>{
         return "Company " + companyNumber + " is "+ name+".";
     }
 
-    @Override
-    public int compareTo(Company o) {
-        return this.name.compareTo(o.name);
-    }
-
     public double requestPriceOfferForCompanySession(Course c, int numberOfParticipants) throws PriceException {
         CompanySession cs = new CompanySession(c,numberOfParticipants);
         double price = cs.calculatePrice();
@@ -51,10 +46,16 @@ public class Company implements Comparable<Company>{
         return price;
     }
 
+    @Override
+    public int compareTo(Company o) {
+        return this.name.compareToIgnoreCase(o.name);
+    }
+
     public static class CompanyByNumberComparator implements Comparator<Company>{
 
         @Override
         public int compare(Company o1, Company o2) {
+           // return Integer.compare(o1.getCompanyNumber(),o2.getCompanyNumber());
             return o1.getCompanyNumber()-o2.getCompanyNumber();
         }
     }

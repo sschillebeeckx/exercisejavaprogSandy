@@ -20,7 +20,7 @@ public class Test {
         System.out.println("\n------------------------ExB6.8 Sort all companies by number----------------------------------");
 
         List<Company> companiesSortedByNumber = cs.sortAllCompaniesByCompanyNumber();
-        System.out.println(companiesSortedByName);
+        System.out.println(companiesSortedByNumber);
 
 
 

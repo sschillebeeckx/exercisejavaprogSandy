@@ -20,13 +20,15 @@ public class Test {
         Session session = new Session(course1,"24/10/2022",comp1,p2);
         session.printInfo();
         System.out.println();
-        CompanySession companySession1 = new CompanySession(course2,"5/10/2022",comp1,p3,comp2);
+        Session companySession1 = new CompanySession(course2,"5/10/2022",comp1,p3,comp2);
         companySession1.printInfo();
         System.out.println();
-        CompanySession companySession2 = new CompanySession(course1,"7/11/2022",comp2,p1,comp2,5);
+        Session companySession2 = new CompanySession(course1,"7/11/2022",comp2,p1,comp2,5);
         companySession2.printInfo();
         System.out.println();
-        PublicSession publicSession = new PublicSession(course2,"22/11/2022",PublicSession.getABIS(),p3);
+        Session publicSession = new PublicSession(course2,"22/11/2022",PublicSession.getABIS(),p3);
         publicSession.printInfo();
+
+
     }
 }

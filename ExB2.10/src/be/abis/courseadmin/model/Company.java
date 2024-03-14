@@ -1,8 +1,5 @@
 package be.abis.courseadmin.model;
 
-/** This is the company class. skmdjfkshdf
- * @author Sandy
- */
 public class Company {
 
     private String name;
@@ -19,7 +16,6 @@ public class Company {
         this.name = name;
     }
 
-    /** printing stuff */
     public void printInfo(){
         System.out.println("The company's name is " + name+".");
     }

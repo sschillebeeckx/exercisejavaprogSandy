@@ -11,7 +11,7 @@ public class CompanySession extends Session {
     }
 
     public CompanySession(Course course, String startDate, Company location, Person instructor, Company organizer, int numberOfParticipants) {
-        this(course, startDate, location, instructor,organizer);
+        this(course, startDate, location, instructor, organizer);
         this.numberOfParticipants = numberOfParticipants;
     }
 

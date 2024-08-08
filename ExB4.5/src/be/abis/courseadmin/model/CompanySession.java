@@ -33,7 +33,7 @@ public class CompanySession extends Session {
 
     public void printInfo(){
         super.printInfo();
-        System.out.println("This session is offered to you by " + this.organizer.getName() + "." + ((numberOfParticipants!=0)?" There will be " + numberOfParticipants + " participants.":""));
+        System.out.println("This session is offered to you by " + this.organizer.getName() + "." + ((numberOfParticipants!=0)?" There will be " + numberOfParticipants +( (numberOfParticipants==1)?" participant.":" participants."):""));
     }
 
     public double calculatePrice(){

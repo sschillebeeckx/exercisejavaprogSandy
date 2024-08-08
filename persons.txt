@@ -1,3 +1,3 @@
 An;65
-John;27
+John;26
 Sandy;42

@@ -15,7 +15,7 @@ public class CompanySession extends Session {
         this.numberOfParticipants = numberOfParticipants;
     }
 
-    public Company getOrganizer() {
+     public Company getOrganizer() {
         return organizer;
     }
 

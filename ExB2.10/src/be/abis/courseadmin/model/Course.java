@@ -7,10 +7,11 @@ public class Course {
     private double pricePerDay;
 
     public Course(){
-
+        System.out.println("creating a course");
     }
 
     public Course(String title, int numberOfDays, double pricePerDay){
+        this();
         this.title=title;
         this.numberOfDays=numberOfDays;
         this.pricePerDay=pricePerDay;
@@ -40,6 +41,7 @@ public class Course {
         this.pricePerDay = pricePerDay;
     }
 
+
     public void printInfo(){
         System.out.println("The " + title + " course takes " + numberOfDays + " days, and costs " +pricePerDay + "€ per day.");
         System.out.println("Total price is: " +this.calculateTotalPrice() + "€.");
@@ -52,6 +54,8 @@ public class Course {
     public double calculateTotalPrice(int reduction){
         return this.calculateTotalPrice()*(1-reduction/100.);
     }
+
+
 
 
 }

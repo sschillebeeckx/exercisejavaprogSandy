@@ -11,32 +11,20 @@ public class ExB14 {
 
         double yearlyGrossSalary=monthlyGrossSalary*12;
 
-        /*double taxRate=0;
-        if (yearlyGrossSalary<13870){
-            taxRate=25;
-        } else if (yearlyGrossSalary>=13870 && yearlyGrossSalary<24480){
-            taxRate=40;
-        } else if (yearlyGrossSalary>=24480 && yearlyGrossSalary<42370){
-            taxRate=45;
-        } else {
-            taxRate=50;
-        }*/
-
         double taxRate=0;
-        if (yearlyGrossSalary<15200){
+        if (yearlyGrossSalary<15820){
             taxRate=25;
-        } else if (yearlyGrossSalary<26830){
+        } else if (yearlyGrossSalary<27920){
             taxRate=40;
-        } else if (yearlyGrossSalary<46440){
+        } else if (yearlyGrossSalary<48320){
             taxRate=45;
         } else {
             taxRate=50;
         }
 
-
         double netSalary = monthlyGrossSalary*(1-taxRate/100);
 
-        System.out.println("The instructor's net salary is " + netSalary);
+        System.out.println("The instructor's net salary is " + netSalary + " .");
 
 
     }

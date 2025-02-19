@@ -19,11 +19,11 @@ public class ExB18 {
             //System.out.println("yearly gross salary is " + grossSalary);
 
             double taxRate=0;
-            if (grossSalary<13870){
+            if (grossSalary<15820){
                 taxRate=25;
-            } else if (grossSalary>=13870 && grossSalary<24480){
+            } else if (grossSalary<27920){
                 taxRate=40;
-            } else if (grossSalary>=24480 && grossSalary<42370){
+            } else if (grossSalary<48320){
                 taxRate=45;
             } else {
                 taxRate=50;
@@ -41,7 +41,7 @@ public class ExB18 {
         double monthlyGrossSalary=salary;
         System.out.println("\n"+firstName + " is " + age + " years old. Monthly gross salary is " + monthlyGrossSalary + ".");
         System.out.println(firstName + " is" + ((!senior)?" not":"")  + " a senior.");
-        System.out.println("The instructor's net salary is " + netSalary);
+        System.out.println("The instructor's net salary is " + netSalary + " .");
 
         String[] domains = {"Java","Oracle","XML","SAS"};
         System.out.println("There are " + domains.length + " domains linked with the instructor:");

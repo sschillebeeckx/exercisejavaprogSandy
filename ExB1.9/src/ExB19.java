@@ -21,11 +21,11 @@ public class ExB19 {
             //System.out.println("yearly gross salary is " + grossSalary);
 
             double taxRate=0;
-            if (grossSalary<13870){
+            if (grossSalary<15820){
                 taxRate=25;
-            } else if (grossSalary>=13870 && grossSalary<24480){
+            } else if (grossSalary<27920){
                 taxRate=40;
-            } else if (grossSalary>=24480 && grossSalary<42370){
+            } else if (grossSalary<48320){
                 taxRate=45;
             } else {
                 taxRate=50;

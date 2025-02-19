@@ -18,19 +18,20 @@ public class ExB110 {
             if (loopAge != startAge) {
                 monthlyGrossSalary = monthlyGrossSalary * 1.05;
             }
-            double yearlyGrossSalary = monthlyGrossSalary * 12;
+
+             double yearlyGrossSalary = monthlyGrossSalary * 12;
             //System.out.println("monthly gross salary is " + salary);
             //System.out.println("yearly gross salary is " + grossSalary);
 
-            double taxRate = 0;
-            if (yearlyGrossSalary < 13870) {
-                taxRate = 25;
-            } else if (yearlyGrossSalary >= 13870 && yearlyGrossSalary < 24480) {
-                taxRate = 40;
-            } else if (yearlyGrossSalary >= 24480 && yearlyGrossSalary < 42370) {
-                taxRate = 45;
+            double taxRate=0;
+            if (yearlyGrossSalary<15820){
+                taxRate=25;
+            } else if (yearlyGrossSalary<27920){
+                taxRate=40;
+            } else if (yearlyGrossSalary<48320){
+                taxRate=45;
             } else {
-                taxRate = 50;
+                taxRate=50;
             }
             //System.out.println("taxRate is " + taxRate);
 
@@ -48,21 +49,9 @@ public class ExB110 {
         String posessivePronoun = "";
 
         switch (gender) {
-            case MALE:
-                personalPronoun = "he";
-                reflexivePronoun = "him";
-                posessivePronoun = "his";
-                break;
-            case FEMALE:
-                personalPronoun = "she";
-                reflexivePronoun = "her";
-                posessivePronoun = "her";
-                break;
-            case OTHER:
-                personalPronoun = "they";
-                reflexivePronoun = "them";
-                posessivePronoun = "their";
-
+            case MALE: personalPronoun = "he"; reflexivePronoun = "him";posessivePronoun = "his";break;
+            case FEMALE: personalPronoun = "she";reflexivePronoun = "her";posessivePronoun = "her";break;
+            case OTHER: personalPronoun = "they";reflexivePronoun = "them";posessivePronoun = "their";
         }
 
         String personalPronounCapitalized = personalPronoun.substring(0, 1).toUpperCase() + personalPronoun.substring(1).toLowerCase();

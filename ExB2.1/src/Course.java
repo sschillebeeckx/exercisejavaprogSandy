@@ -5,8 +5,8 @@ public class Course {
     double pricePerDay;
 
     public void printInfo(){
-        System.out.println("The " + this.title + " course takes " + numberOfDays
-                + " days, and costs " +pricePerDay + "€ per day.");
+        System.out.println("The " + this.title + " course takes " + this.numberOfDays
+                + " days, and costs " +this.pricePerDay + "€ per day.");
     }
 
     public double calculateTotalPrice(){

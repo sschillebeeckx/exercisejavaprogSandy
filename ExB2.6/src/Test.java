@@ -14,8 +14,8 @@ public class Test {
 
         System.out.println("\n------------------------Persons----------------------------------");
         Person p1 = new Person("Mary","Jones",comp1);
-        Person p2=new Person("John","Doe");
-        Person p3 = new Person("Bob","Janssens",new Company("Smals"));
+        Person p2 = new Person("John","Doe");
+        Person p3 = new Person("Bob","Janssens",new Company("ING"));
         Person[] persons = {p1,p2,p3};
         System.out.println("There were " + Person.getCounter() + " persons created:");
         for (Person p: persons){

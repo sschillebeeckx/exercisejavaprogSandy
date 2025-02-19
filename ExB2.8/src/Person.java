@@ -68,8 +68,8 @@ public class Person {
     }
 
     public void addHobby(String hobby){
-        hobbies[hobbiesIndex]=hobby;
-        hobbiesIndex++;
+        hobbies[hobbiesIndex++]=hobby;
+        //hobbiesIndex++;
     }
 
     public void addHobbies(String... hobbies){

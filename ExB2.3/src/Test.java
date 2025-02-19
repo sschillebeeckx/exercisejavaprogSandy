@@ -12,6 +12,5 @@ public class Test {
         Company comp1 = new Company("Abis");
         comp1.printInfo();
 
-
     }
 }

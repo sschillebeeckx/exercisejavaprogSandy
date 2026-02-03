@@ -6,8 +6,11 @@ public class Test {
         c.numberOfDays=4;
         c.pricePerDay=550;
 
+
         c.printInfo();
-        double totalPrice=c.calculateTotalPrice();
-        System.out.println("The total price is " + totalPrice +".");
+
+
+        //System.out.println("The total price is " + totalPrice +".");
+        //System.out.println("The total price is " + c.calculateTotalPrice() +".");
     }
 }

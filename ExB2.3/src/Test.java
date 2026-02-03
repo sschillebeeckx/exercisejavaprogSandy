@@ -9,8 +9,8 @@ public class Test {
         System.out.println("The total price is " + totalPrice +".");
 
         System.out.println("\n------------------------Company----------------------------------");
-        Company comp1 = new Company("Abis");
-        comp1.printInfo();
+        Company company = new Company("Abis");
+        company.printInfo();
 
     }
 }

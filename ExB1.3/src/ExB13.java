@@ -11,11 +11,11 @@ public class ExB13 {
         double grossSalary=monthlyGrossSalary*12;
 
       /*  double taxRate=0;
-        if (grossSalary<15820){
+        if (grossSalary<16320){
             taxRate=25;
-        } else if (grossSalary<27920){
+        } else if (grossSalary<28800){
             taxRate=40;
-        } else if (grossSalary<48320){
+        } else if (grossSalary<49840){
             taxRate=45;
         } else {
             taxRate=50;
@@ -28,9 +28,9 @@ public class ExB13 {
         double yearlyNetSalary = 0;
         double salaryPart = 0;
 
-        double val1= 15820;
-        double val2= 27920;
-        double val3= 48320;
+        double val1= 16320;
+        double val2= 28800;
+        double val3= 49840;
 
         if (grossSalary>=val3){
             yearlyNetSalary+=(grossSalary-val3)*0.5;

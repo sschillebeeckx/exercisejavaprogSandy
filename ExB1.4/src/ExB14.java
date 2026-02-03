@@ -12,11 +12,11 @@ public class ExB14 {
         double yearlyGrossSalary=monthlyGrossSalary*12;
 
         double taxRate=0;
-        if (yearlyGrossSalary<15820){
+        if (yearlyGrossSalary<16320){
             taxRate=25;
-        } else if (yearlyGrossSalary<27920){
+        } else if (yearlyGrossSalary<28800){
             taxRate=40;
-        } else if (yearlyGrossSalary<48320){
+        } else if (yearlyGrossSalary<49840){
             taxRate=45;
         } else {
             taxRate=50;

@@ -19,11 +19,11 @@ public class ExB18 {
             //System.out.println("yearly gross salary is " + grossSalary);
 
             double taxRate=0;
-            if (grossSalary<15820){
+            if (grossSalary<16320){
                 taxRate=25;
-            } else if (grossSalary<27920){
+            } else if (grossSalary<28800){
                 taxRate=40;
-            } else if (grossSalary<48320){
+            } else if (grossSalary<49840){
                 taxRate=45;
             } else {
                 taxRate=50;
@@ -45,7 +45,7 @@ public class ExB18 {
 
         String[] domains = {"Java","Oracle","XML","SAS"};
         System.out.println("There are " + domains.length + " domains linked with the instructor:");
-        for (String domain:domains){
+        for (String domain : domains){
             System.out.println(domain);
         }
 

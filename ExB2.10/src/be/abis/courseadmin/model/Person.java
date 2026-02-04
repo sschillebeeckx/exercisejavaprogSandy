@@ -3,12 +3,14 @@ package be.abis.courseadmin.model;
 public class Person {
 
     private static int counter;
+
     private int personNumber;
     private String firstName;
     private String lastName;
-    private Company company;
     private String[] hobbies=new String[10];
     private int numberOfHobbies=0;
+
+    private Company company;
 
     public Person(String firstName, String lastName) {
         this.personNumber=++counter;
@@ -65,9 +67,9 @@ public class Person {
         return hobbies;
     }
 
-    public void setHobbies(String[] hobbies) {
+   /* public void setHobbies(String[] hobbies) {
         this.hobbies = hobbies;
-    }
+    }*/
 
     public void addHobby(String hobby){
         hobbies[numberOfHobbies]=hobby;
@@ -81,7 +83,7 @@ public class Person {
     }
 
     public void printInfo(){
-        Company c = company;
+        Company c = this.company;
         System.out.println("Person " + personNumber + ": " +firstName + " " + lastName + ((c!=null)?" works for " + c.getName() +"." : " is not linked to a company for the moment."));
     }
 

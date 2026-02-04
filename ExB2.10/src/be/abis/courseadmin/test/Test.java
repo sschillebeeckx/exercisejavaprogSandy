@@ -3,7 +3,6 @@ package be.abis.courseadmin.test;
 import be.abis.courseadmin.model.Company;
 import be.abis.courseadmin.model.Course;
 import be.abis.courseadmin.model.Person;
-import org.apache.commons.lang3.StringUtils;
 
 public class Test {
 
@@ -12,7 +11,7 @@ public class Test {
         System.out.println("------------------------Course----------------------------------");
         Course c = new Course("Java",5,500);
         c.printInfo();
-       // c.calculateTotalPrice();
+        //c.calculateTotalPrice();
 
         System.out.println("\n------------------------Company----------------------------------");
         Company comp1 = new Company("Abis");

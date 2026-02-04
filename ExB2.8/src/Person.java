@@ -8,14 +8,18 @@ public class Person {
     private String[] hobbies=new String[10];
     private int hobbiesIndex;
 
-    public Person(String firstName, String lastName) {
+    public Person(){
         personNumber=++counter;
+    }
+
+    public Person(String firstName, String lastName) {
+        this();
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
     public Person(String firstName, String lastName, Company company) {
-        this(firstName, lastName);
+        this();
         this.company = company;
     }
 
@@ -70,13 +74,24 @@ public class Person {
     public void addHobby(String hobby){
         hobbies[hobbiesIndex++]=hobby;
         //hobbiesIndex++;
+        System.out.println("calling adding 1");
     }
 
     public void addHobbies(String... hobbies){
+        System.out.println("calling adding multiple");
+        for (String hobby:hobbies){
+            this.addHobbies(hobby);
+        }
+
+
+
+    }
+
+    /*public void addHobbies(String... hobbies){
         for (String hobby:hobbies){
             this.addHobby(hobby);
         }
-    }
+    }*/
 
     public void printInfo(){
         Company c = company;

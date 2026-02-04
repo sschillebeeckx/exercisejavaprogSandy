@@ -31,8 +31,10 @@ public class CompanySession extends Session {
         this.numberOfParticipants = numberOfParticipants;
     }
 
+    @Override
     public void printInfo(){
         super.printInfo();
+        this.location.getName();
         System.out.println("This session is offered to you by " + this.organizer.getName() + "." + ((numberOfParticipants!=0)?" There will be " + numberOfParticipants + " participants.":""));
     }
 }

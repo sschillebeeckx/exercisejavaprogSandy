@@ -18,10 +18,10 @@ public class Test {
 
 
         System.out.println("\n------------------------ExB4.2 Sessions----------------------------------");
-        Session session = new Session(course1,"24/10/2022",comp1,p2);
-        CompanySession companySession1 = new CompanySession(course2,"5/10/2022",comp1,p3,comp2);
-        CompanySession companySession2 = new CompanySession(course1,"7/11/2022",comp2,p1,comp2,5);
-        PublicSession publicSession = new PublicSession(course2,"22/11/2022",PublicSession.getABIS(),p3);
+        Session session = new Session(course1,"24/02/2025",comp1,p2);
+        CompanySession companySession1 = new CompanySession(course2,"5/3/2025",comp1,p3,comp2);
+        CompanySession companySession2 = new CompanySession(course1,"7/4/2025",comp2,p1,comp2,5);
+        PublicSession publicSession = new PublicSession(course2,"22/3/2025",PublicSession.getABIS(),p3);
         Session[] sessions={session,companySession1,companySession2,publicSession};
         for (Session s: sessions){
             s.printInfo();

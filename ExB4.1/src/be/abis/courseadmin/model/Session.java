@@ -49,6 +49,6 @@ public class Session {
     public void printInfo(){
         Company instructorComp=instructor.getCompany();
         System.out.println("The " + course.getTitle()+ " course will start on "+ startDate + ". It will take place at " + location.getName() +
-                ". Your instructor is "+ instructor.getFirstName()+ " " + instructor.getLastName()+ ((instructorComp!=null)? " of " + instructor.getCompany().getName()+".":"."));
+                ". Your instructor is "+ instructor.getFirstName()+ " " + instructor.getLastName()+ ((instructorComp!=null)? " of " + instructorComp.getName()+".":"."));
     }
 }

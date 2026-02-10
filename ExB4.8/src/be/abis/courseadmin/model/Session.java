@@ -1,6 +1,6 @@
 package be.abis.courseadmin.model;
 
-public class Session extends Service {
+public  class Session extends Service {
 
     private Course course;
     private String startDate;
@@ -59,5 +59,7 @@ public class Session extends Service {
     /*protected double calculatePrice(){
         return 200.0;
     }*/
+
+
 
 }

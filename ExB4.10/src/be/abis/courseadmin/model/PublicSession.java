@@ -5,7 +5,7 @@ import be.abis.courseadmin.repository.MemoryArrayCompanyRepository;
 
 public class PublicSession extends Session {
 
-    CompanyRepository cr = new MemoryArrayCompanyRepository();
+    CompanyRepository cr=new MemoryArrayCompanyRepository();
 
     public PublicSession(Course course, String startDate, Company location, Person instructor) {
         super(course, startDate, location, instructor);

@@ -52,8 +52,8 @@ public class Session extends Service {
                 ". Your instructor is "+ instructor.getFirstName()+ " " + instructor.getLastName()+ ((instructorComp!=null)? " of " + instructor.getCompany().getName()+".":"."));
     }
 
-    public double calculatePrice(){
-        return 200.0;
-    }
+    //public double calculatePrice() {
+      //  return 200.;
+   // }
 
 }

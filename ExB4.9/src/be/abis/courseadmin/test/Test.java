@@ -19,17 +19,19 @@ public class Test {
 
 
         System.out.println("\n------------------------ExB4.8 Services abstract----------------------------------");
-        CompanySession companySession1 = new CompanySession(course2,"5/10/2022",comp1,p3,comp2);
-        CompanySession companySession2 = new CompanySession(course1,"7/11/2022",comp2,p1,comp2,5);
-        PublicSession publicSession = new PublicSession(course2,"22/11/2022",comp1,p3);
+        Session companySession1 = new CompanySession(course2,"5/3/2025",comp1,p3,comp2);
+        Session companySession2 = new CompanySession(course1,"7/4/2025",comp2,p1,comp2,5);
+        Session publicSession = new PublicSession(course2,"22/3/2025",comp1,p3);
 
        Consultancy consultancy = new Consultancy();
         Service[] services = {companySession1,consultancy,companySession2,publicSession};
         for (Service s : services){
             if (s instanceof Session){
                 ((Session) s).printInfo();
+                System.out.println(((Session) s).getOrganizer());
             }
             System.out.println("The price for the " +s.getClass().getSimpleName() + " is " +s.calculatePrice() +".\n");
+
         }
       
     }

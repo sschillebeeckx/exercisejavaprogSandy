@@ -1,5 +1,7 @@
 package be.abis.courseadmin.model;
 
+import java.util.Arrays;
+
 /**
  * This is the person class. Each person has a firstName, lastName and a list of hobbies. A person is optionnally linked to a company.
  * @author Sandy
@@ -99,4 +101,5 @@ public class Person {
     public void attendCourse(Course c){
         System.out.println(firstName + " is attending a " + c.getTitle() + " course.");
     }
+
 }

@@ -39,12 +39,13 @@ public class Course {
     public String toString(){
         return this.title;
     }
+
     public void printInfo(){
         System.out.println("The " + title + " course takes " + numberOfDays + " days, and costs " +pricePerDay + "€ per day.");
         System.out.println("Total price is: " +this.calculateTotalPrice() + "€.");
     }
 
-    double calculateTotalPrice(){
+    public double calculateTotalPrice(){
         return numberOfDays*pricePerDay;
     }
 

@@ -9,6 +9,4 @@ public interface CompanyRepository {
     void addCompany(Company c);
     void updateCompany(Company c);
     void deleteCompany(int id);
-    Company[] getCompanies();
-
 }

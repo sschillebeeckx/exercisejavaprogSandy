@@ -16,18 +16,18 @@ public class Test {
 
         Company comp1 = cr.findCompany(1);
         System.out.println(comp1);
-        Company comp2 = cr.findCompany("smals");
+        Company comp2 = cr.findCompany("Smals" );
         Company comp3 = cr.findCompany(4);
 
         Person p1 = new Person("Mary","Jones",comp1);
-        Person p2=new Person("John","Doe");
+        Person p2 = new Person("John","Doe");
         Person p3 = new Person("Bob","Janssens",comp3);
 
 
         System.out.println("\n------------------------ExB4.8 Services abstract----------------------------------");
-        CompanySession companySession1 = new CompanySession(course1,"5/10/2022",comp1,p1,comp2);
-        CompanySession companySession2 = new CompanySession(course3,"7/11/2022",comp1,p3,comp2,5);
-        PublicSession publicSession = new PublicSession(course2,"22/11/2022",comp1,p3);
+        CompanySession companySession1 = new CompanySession(course1,"5/3/2025",comp1,p1,comp2);
+        CompanySession companySession2 = new CompanySession(course3,"7/4/2025",comp1,p3,comp2,5);
+        PublicSession publicSession = new PublicSession(course2,"22/3/2025",comp1,p3);
 
        Consultancy consultancy = new Consultancy();
         Service[] services = {companySession1,consultancy,companySession2,publicSession};

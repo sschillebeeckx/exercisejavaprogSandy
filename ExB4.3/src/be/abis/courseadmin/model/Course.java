@@ -49,10 +49,4 @@ public class Course {
         return this.calculateTotalPrice()*(1-reduction/100.);
     }
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "title='" + title + '\'' +
-                '}';
-    }
 }

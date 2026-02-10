@@ -1,8 +1,8 @@
 package be.abis.courseadmin.model;
 
-public class Service {
+public  class Service {
 
-    public double calculatePrice(){
-        return 100.0;
-    }
+   public double calculatePrice() {
+      return 1000.;
+   }
 }

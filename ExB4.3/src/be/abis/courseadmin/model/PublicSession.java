@@ -15,4 +15,6 @@ public class PublicSession extends Session {
     public double calculatePrice(){
         return 300.0;
     }
+
+
 }

@@ -13,14 +13,14 @@ public class Test {
         Company comp2 = new Company("IBM");
 
         Person p1 = new Person("Mary","Jones",comp1);
-        Person p2=new Person("John","Doe");
+        Person p2 = new Person("John","Doe");
         Person p3 = new Person("Bob","Janssens",new Company("TTL"));
 
         System.out.println("\n------------------------ExB4.4 Services----------------------------------");
-        Session session = new Session(course1,"24/10/2022",comp1,p2);
-        CompanySession companySession1 = new CompanySession(course2,"5/10/2022",comp1,p3,comp2);
-        CompanySession companySession2 = new CompanySession(course1,"7/11/2022",comp2,p1,comp2,5);
-        PublicSession publicSession = new PublicSession(course2,"22/11/2022",PublicSession.getABIS(),p3);
+        Session session = new Session(course1,"24/02/2025",comp1,p2);
+        CompanySession companySession1 = new CompanySession(course2,"5/3/2025",comp1,p3,comp2);
+        CompanySession companySession2 = new CompanySession(course1,"7/4/2025",comp2,p1,comp2,5);
+        PublicSession publicSession = new PublicSession(course2,"22/3/2025",PublicSession.getABIS(),p3);
 
         Service service = new Service();
         Consultancy consultancy = new Consultancy();

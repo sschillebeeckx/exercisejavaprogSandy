@@ -16,14 +16,22 @@ public class MemoryArrayCompanyRepository implements CompanyRepository {
 
     @Override
     public Company findCompany(int id) {
-        return companies[id-1];
+        Company foundComp= null;
+        for (Company c : companies){
+            if (c.getCompanyNumber()==id){
+                foundComp=c;
+                break;
+            }
+        }
+
+        return foundComp;
     }
 
     @Override
     public Company findCompany(String name) {
         Company foundCompany=null;
         for (Company c:companies){
-            if (c.getName().equalsIgnoreCase(name)){
+            if (c.getName().equals(name)){
                 foundCompany=c;
             }
         }

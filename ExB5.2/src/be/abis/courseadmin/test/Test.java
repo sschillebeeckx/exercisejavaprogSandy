@@ -22,22 +22,22 @@ public class Test {
         Company comp3 = cr.findCompany(4);
 
         Person p1 = new Person("Mary","Jones", Gender.FEMALE,comp1);
-        Person p2=new Person("John","Doe",Gender.OTHER);
+        Person p2 = new Person("John","Doe",Gender.OTHER);
         Person p3 = new Person("Bob","Janssens", Gender.MALE,comp3);
         p1.addHobby("soccer");
         p2.addHobbies("gaming","walking","cooking");
         p3.addHobbies("soccer","dancing");
 
         System.out.println("\n------------------------ExB5.1 Price of CompanySession----------------------------------");
-        CompanySession companySession1 = new CompanySession(course1,"5/10/2022",comp1,p1,comp2);
+        CompanySession companySession1 = new CompanySession(course1,"5/3/2025",comp1,p1,comp2);
         companySession1.setNumberOfParticipants(2);
-        CompanySession companySession2 = new CompanySession(course3,"7/11/2022",comp1,p3,comp2,5);
+        CompanySession companySession2 = new CompanySession(course3,"7/4/2025",comp1,p3,comp2,5);
 
         Session[] sessions = {companySession1,companySession2};
 
         for (Session s:sessions){
             try {
-                System.out.println("The price of " + s.getCourse() + " on " + s.getStartDate() + " is "  +s.calculatePrice() +".");
+                System.out.println("The price of " + s.getCourse() + " course on " + s.getStartDate() + " is "  +s.calculatePrice() +".");
             } catch (PriceTooHighException e) {
                 //e.printStackTrace();
                 System.out.println(e.getMessage());

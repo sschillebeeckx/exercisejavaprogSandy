@@ -31,7 +31,7 @@ public class Test {
             Person p4 = new Person("An","Smets", Gender.FEMALE,comp2);
             Person p5 = new Person("Sam","Smets", Gender.OTHER,comp2);
 
-            PublicSession publicSession = new PublicSession(course2,"22/11/2022",comp1,p1);
+            PublicSession publicSession = new PublicSession(course2,"22/3/2025",comp1,p1);
 
             publicSession.addEnrolment(p2);
             publicSession.addEnrolments(p4,p5);

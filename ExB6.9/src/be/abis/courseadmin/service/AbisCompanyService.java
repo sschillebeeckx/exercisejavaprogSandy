@@ -27,8 +27,8 @@ public class AbisCompanyService implements CompanyService{
     public List<Company> sortAllCompaniesByCompanyNumber() {
         //List<Company> companies = ((MemoryListCompanyRepository)cr).getCompanies();
         List<Company> companies = cr.findAllCompanies();
-        //Collections.sort(companies,new Company.CompanyByNumberComparator());
-        companies.sort(new Company.CompanyByNumberComparator());
+        Collections.sort(companies,new Company.CompanyByNumberComparator());
+        //companies.sort(new Company.CompanyByNumberComparator());
         return companies;
     }
 

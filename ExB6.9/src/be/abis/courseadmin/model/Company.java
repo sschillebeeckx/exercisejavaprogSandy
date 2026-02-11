@@ -46,7 +46,7 @@ public class Company implements Comparable<Company>{
         return price;
     }
 
-    @Override
+    //@Override
     public int compareTo(Company o) {
         return this.name.compareToIgnoreCase(o.name);
     }

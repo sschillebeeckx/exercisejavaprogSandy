@@ -2,12 +2,11 @@ package be.abis.courseadmin.test;
 
 import be.abis.courseadmin.enumeration.Gender;
 import be.abis.courseadmin.exception.CompanyNotFoundException;
-import be.abis.courseadmin.model.Company;
-import be.abis.courseadmin.model.Course;
-import be.abis.courseadmin.model.Person;
-import be.abis.courseadmin.model.PublicSession;
+import be.abis.courseadmin.model.*;
 import be.abis.courseadmin.repository.CompanyRepository;
 import be.abis.courseadmin.repository.MemoryListCompanyRepository;
+
+import java.util.List;
 
 public class Test {
 
@@ -27,13 +26,13 @@ public class Test {
             Company comp3 = cr.findCompany(4);
 
             Person p1 = new Person("Mary","Jones", Gender.FEMALE,comp1);
-            Person p2=new Person("John","Doe",Gender.OTHER,comp1);
+            Person p2 = new Person("John","Doe",Gender.OTHER,comp1);
             Person p3 = new Person("Bob","Janssens", Gender.MALE,comp3);
             Person p4 = new Person("An","Smets", Gender.FEMALE,comp2);
             Person p5 = new Person("Sam","Smets", Gender.OTHER,comp2);
             Person p6 = new Person("Peter","Vanroose", Gender.MALE,comp1);
 
-            PublicSession publicSession = new PublicSession(course2,"22/11/2022",comp1,p1);
+            PublicSession publicSession = new PublicSession(course2,"22/3/2025",comp1,p1);
 
             publicSession.addEnrolments(p2,p3,p4,p5,p6);
 

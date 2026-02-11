@@ -38,7 +38,7 @@ public class Test {
             p4.addHobbies("arts","dancing");
             p5.addHobby("martial arts");
 
-            PublicSession publicSession = new PublicSession(course2,"22/11/2022",comp1,p1);
+            PublicSession publicSession = new PublicSession(course2,"22/3/2025",comp1,p1);
 
             publicSession.addEnrolment(p2);
             publicSession.addEnrolments(p4,p5);

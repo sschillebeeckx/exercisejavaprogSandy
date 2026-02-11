@@ -64,6 +64,9 @@ public class PublicSession extends Session {
     }
 
     public List<CourseParticipant> findAbisParticipants(){
+
+
+
         List<CourseParticipant> abisParticipants= new ArrayList<>();
         for(CourseParticipant cp: enrolments){
            Person p= (Person)cp;

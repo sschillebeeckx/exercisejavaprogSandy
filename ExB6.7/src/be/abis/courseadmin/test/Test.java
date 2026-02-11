@@ -21,7 +21,7 @@ public class Test {
             Company comp3 = cr.findCompany(4);
 
             Person p1 = new Person("Mary","Jones", Gender.FEMALE,comp1);
-            Person p2=new Person("John","Doe",Gender.OTHER,comp1);
+            Person p2 = new Person("John","Doe",Gender.OTHER,comp1);
             Person p3 = new Person("Bob","Janssens", Gender.MALE,comp3);
             Person p4 = new Person("An","Smets", Gender.FEMALE,comp2);
             Person p5 = new Person("Sam","Smets", Gender.OTHER,comp2);

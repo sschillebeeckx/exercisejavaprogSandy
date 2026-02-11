@@ -28,7 +28,7 @@ public class PublicSession extends Session {
 
     public void addEnrolment(CourseParticipant cp){
         enrolments.add(cp);
-       // System.out.println(cp + " was added as participant.");
+        System.out.println(((Person)cp).getFirstName() + " was added as participant.");
     }
 
     public void addEnrolments(CourseParticipant... cps){
@@ -37,7 +37,7 @@ public class PublicSession extends Session {
 
     public void cancelEnrolment(CourseParticipant cp){
         enrolments.remove(cp);
-       // System.out.println(cp + " cancelled " +( (Person)cp).getGender().getPossessivePronoun() + " enrolment.");
+        System.out.println(cp + " cancelled " +( (Person)cp).getGender().getPossessivePronoun() + " enrolment.");
     }
 
     public double calculatePrice(){

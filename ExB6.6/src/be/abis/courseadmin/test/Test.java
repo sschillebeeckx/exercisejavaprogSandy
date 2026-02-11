@@ -33,7 +33,7 @@ public class Test {
             Person p5 = new Person("Sam","Smets", Gender.OTHER,comp2);
             Person p6 = new Person("Peter","Vanroose", Gender.MALE,comp1);
 
-            PublicSession publicSession = new PublicSession(course2,"22/11/2022",comp1,p1);
+            PublicSession publicSession = new PublicSession(course2,"22/3/2025",comp1,p1);
 
             publicSession.addEnrolments(p2,p3,p4,p5,p6);
 

@@ -4,6 +4,7 @@ import be.abis.courseadmin.model.Company;
 import be.abis.courseadmin.service.AbisCompanyService;
 import be.abis.courseadmin.service.CompanyService;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class Test {

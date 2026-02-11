@@ -4,6 +4,7 @@ import be.abis.courseadmin.exception.CompanyNotFoundException;
 import be.abis.courseadmin.model.Company;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class MemoryListCompanyRepository implements CompanyRepository {
@@ -47,6 +48,7 @@ public class MemoryListCompanyRepository implements CompanyRepository {
             }
         }
         if (foundCompany==null) throw new CompanyNotFoundException("Company " + name + " can not be found.");
+
         return foundCompany;
     }
 

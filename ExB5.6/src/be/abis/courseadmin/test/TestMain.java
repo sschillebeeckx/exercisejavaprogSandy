@@ -12,7 +12,7 @@ public class TestMain {
         CompanyRepository cr = new MemoryArrayCompanyRepository();
 
         try {
-            Company comp1 = cr.findCompany(8);
+            Company comp1 = cr.findCompany(1);
             System.out.println(comp1);
 
         } catch (CompanyNotFoundException e) {
@@ -26,11 +26,16 @@ public class TestMain {
         }
 
         try {
-            Company comp3 = cr.findCompany("x");
+            Company comp3 = cr.findCompany("ABIS");
         } catch (CompanyNotFoundException e) {
             System.out.println(e.getMessage());
         }
 
+        try {
+            Company comp3 = cr.findCompany("x");
+        } catch (CompanyNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 }

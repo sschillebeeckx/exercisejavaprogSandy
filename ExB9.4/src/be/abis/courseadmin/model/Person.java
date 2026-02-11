@@ -10,7 +10,7 @@ import java.util.TreeSet;
  * This is the person class. Each person has a firstName, lastName and a list of hobbies. A person is optionnally linked to a company.
  * @author Sandy
  **/
-public class Person implements Instructor, CourseParticipant, Comparable<CourseParticipant> {
+public class Person implements Instructor, CourseParticipant/*, Comparable<CourseParticipant> */{
 
     private static int counter;
     private int personNumber;

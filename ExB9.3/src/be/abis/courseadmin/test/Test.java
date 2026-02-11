@@ -51,7 +51,7 @@ public class Test {
             System.out.println(es.sortParticipantsByLastName(enrolments));
 
             System.out.println("\n------------------------ExB9.3  Participant List sorted on last and first name----------------------------------");
-            System.out.println(es.sortParticipantsByLastandFirstName(enrolments));
+            System.out.println(es.sortParticipantsByLastAndFirstName(enrolments));
 
         } catch (CompanyNotFoundException cnf) {
             cnf.printStackTrace();

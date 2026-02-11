@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PublicSession extends Session {
 
@@ -76,7 +77,10 @@ public class PublicSession extends Session {
                }
            }
         }
-        return abisParticipants;
+       // return abisParticipants;
+        return enrolments.stream()
+                .filter(cp -> ((Person)cp).getCompany()!=null && ((Person)cp).getCompany().getName().equalsIgnoreCase("Abis"))
+                .collect(Collectors.toList());
     }
 
     public void removeAbisParticipants(){

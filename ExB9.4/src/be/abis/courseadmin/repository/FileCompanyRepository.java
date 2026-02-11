@@ -12,7 +12,7 @@ import java.util.List;
 public class FileCompanyRepository implements CompanyRepository {
 
     private List<Company> companies;
-    String pathToFile = "c:\\temp\\javacourses\\companies.txt";
+    String pathToFile = "/temp/javacourses/companies.txt";
 
     public FileCompanyRepository() {
         companies = new ArrayList<>();
@@ -35,7 +35,6 @@ public class FileCompanyRepository implements CompanyRepository {
             while ((compName=br.readLine())!=null){
                 companies.add(new Company(compName.trim()));
             }
-
 
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -6,6 +6,7 @@ import be.abis.courseadmin.repository.FileCompanyRepository;
 import be.abis.courseadmin.repository.MemoryListCompanyRepository;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class AbisCompanyService implements CompanyService {
@@ -22,7 +23,12 @@ public class AbisCompanyService implements CompanyService {
     @Override
     public List<Company> sortAllCompaniesByCompanyNumber() {
         List<Company> companies = ((MemoryListCompanyRepository)cr).getCompanies();
-        Collections.sort(companies,new Company.CompanyByNumberComparator());
+        companies.sort(new Company.CompanyByNumberComparator());
+
+        //Collections.sort(companies,(Company c1, Company c2) -> c1.getCompanyNumber()-c2.getCompanyNumber());
+        Comparator<Company> myComparator = ( c1,  c2) -> c1.getCompanyNumber()-c2.getCompanyNumber();
+        companies.sort(( c1,  c2) -> c1.getName().compareToIgnoreCase(c2.getName()));
+
         return companies;
     }
 

@@ -10,7 +10,7 @@ import java.util.List;
 public class AbisEnrolmentService implements EnrolmentService {
     @Override
     public List<CourseParticipant> sortParticipantsByPersonNumber(List<CourseParticipant> participants) {
-        Collections.sort(participants);
+        participants.sort(null);
         return participants;
     }
 
@@ -22,12 +22,12 @@ public class AbisEnrolmentService implements EnrolmentService {
 
     @Override
     public List<CourseParticipant> sortParticipantsByLastName(List<CourseParticipant> participants) {
-        participants.sort((p1, p2) -> ((Person) p1).getLastName().compareTo(((Person) p2).getLastName()));
+        participants.sort(Comparator.comparing(p -> ((Person) p).getLastName()));
         return participants;
     }
 
     @Override
-    public List<CourseParticipant> sortParticipantsByLastandFirstName(List<CourseParticipant> participants) {
+    public List<CourseParticipant> sortParticipantsByLastAndFirstName(List<CourseParticipant> participants) {
         participants.sort(Comparator.comparing(c -> ((Person) c).getLastName()).thenComparing(c -> ((Person) c).getFirstName()));
         return participants;
     }

@@ -9,6 +9,6 @@ public interface EnrolmentService {
     List<CourseParticipant> sortParticipantsByPersonNumber(List<CourseParticipant> participants);
     List<CourseParticipant> sortParticipantsByFirstName(List<CourseParticipant> participants);
     List<CourseParticipant> sortParticipantsByLastName(List<CourseParticipant> participants);
-    List<CourseParticipant> sortParticipantsByLastandFirstName(List<CourseParticipant> participants);
+    List<CourseParticipant> sortParticipantsByLastAndFirstName(List<CourseParticipant> participants);
 
 }

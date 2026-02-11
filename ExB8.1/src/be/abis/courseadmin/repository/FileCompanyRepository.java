@@ -45,7 +45,6 @@ public class FileCompanyRepository implements CompanyRepository {
             for(String line : lines){
                 if(!line.equals("")) companies.add(new Company(line.trim()));
             }
-
              */
 
             System.out.println(companies);
@@ -94,8 +93,7 @@ public class FileCompanyRepository implements CompanyRepository {
             }
 
             if (b){
-               // pw.append("\n"+compToAdd);
-                pw.println(compToAdd);
+                pw.append("\n"+compToAdd);
                 companies.add(c);
             }
             System.out.println(companies);
@@ -107,7 +105,7 @@ public class FileCompanyRepository implements CompanyRepository {
     @Override
     public void updateCompany(Company c) throws CompanyNotFoundException {
        // this.readFile();
-       Company foundCompany= this.findCompany(c.getCompanyNumber());
+       Company foundCompany = this.findCompany(c.getCompanyNumber());
        foundCompany.setName(c.getName());
         try {
             this.writeAllCompanies();

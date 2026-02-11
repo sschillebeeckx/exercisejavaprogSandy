@@ -15,7 +15,7 @@ public class TestMain {
         try {
             Company comp1 = cr.findCompany(1);
             System.out.println(comp1);
-            Company comp2 = cr.findCompany("smals");
+            Company comp2 = cr.findCompany("Smals");
             System.out.println(comp2);
 
             Company newComp = new Company("new comp");
@@ -34,7 +34,7 @@ public class TestMain {
             }
 
             try {
-                 Company comp4 = cr.findCompany("smils");
+                 Company comp4 = cr.findCompany("ONG");
             } catch (CompanyNotFoundException cnf) {
                 System.out.println(cnf.getMessage());
             }

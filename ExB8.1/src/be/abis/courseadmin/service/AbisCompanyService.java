@@ -14,14 +14,14 @@ public class AbisCompanyService implements CompanyService {
 
     @Override
     public List<Company> sortAllCompaniesByName() {
-        List<Company> companies = ((MemoryListCompanyRepository)cr).getCompanies();
+        List<Company> companies = cr.getCompanies();
         Collections.sort(companies);
         return companies;
     }
 
     @Override
     public List<Company> sortAllCompaniesByCompanyNumber() {
-        List<Company> companies = ((MemoryListCompanyRepository)cr).getCompanies();
+        List<Company> companies = cr.getCompanies();
         Collections.sort(companies,new Company.CompanyByNumberComparator());
         return companies;
     }

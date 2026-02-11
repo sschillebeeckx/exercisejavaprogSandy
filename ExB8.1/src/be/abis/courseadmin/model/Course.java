@@ -1,5 +1,7 @@
 package be.abis.courseadmin.model;
 
+import java.io.Serializable;
+
 public class Course {
 
     private String title;

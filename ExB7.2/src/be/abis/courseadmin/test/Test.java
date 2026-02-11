@@ -35,10 +35,10 @@ public class Test {
             Person p6 = new Person("Peter", "Vanroose", Gender.MALE, comp1);
 
             System.out.println("\n------------------------ExB4.8 Services abstract----------------------------------");
-            CompanySession companySession1 = new CompanySession(course1, DateUtils.parse("05/10/2022"), comp1, p1, comp2);
+            CompanySession companySession1 = new CompanySession(course1, DateUtils.parse("05/3/2025"), comp1, p1, comp2);
             //companySession1.setNumberOfParticipants(5);
-            CompanySession companySession2 = new CompanySession(course3, DateUtils.parse("7/1/2023"), comp1, p3, comp2, 5);
-            PublicSession publicSession = new PublicSession(course2, LocalDate.of(2022,11,22), comp1, p3);
+            CompanySession companySession2 = new CompanySession(course3, DateUtils.parse("7/4/2025"), comp1, p3, comp2, 5);
+            PublicSession publicSession = new PublicSession(course2, LocalDate.of(2025,3,22), comp1, p3);
 
             Consultancy consultancy = new Consultancy();
             Service[] services = {companySession1, consultancy, companySession2, publicSession};
@@ -51,7 +51,6 @@ public class Test {
                 } catch (PriceTooHighException e) {
                     throw new RuntimeException(e);
                 }
-
 
             }
 

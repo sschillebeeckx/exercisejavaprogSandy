@@ -8,7 +8,7 @@ public class DecimalUtils {
     static DecimalFormat setUpFormat(){
         DecimalFormatSymbols otherSymbols = new DecimalFormatSymbols();
         otherSymbols.setDecimalSeparator(',');
-        otherSymbols.setGroupingSeparator('.');
+        otherSymbols.setGroupingSeparator(' ');
         return new DecimalFormat("#,##0.00",otherSymbols);
     }
 

@@ -2,9 +2,9 @@ public class ExB16 {
 
     public static void main(String[] args) {
         String firstName="Bob";
-        int startAge=Integer.parseInt(args[0]);
-        int age=Integer.parseInt(args[1]);
-        double monthlyGrossStartSalary=Double.parseDouble(args[2]);
+        int startAge=23;
+        int age=63;
+        double monthlyGrossStartSalary=2700;
         boolean senior=false;
 
         int loopAge=startAge;
@@ -20,7 +20,7 @@ public class ExB16 {
 
             double taxRate=0;
             if (grossSalary<16320){
-                taxRate=25;
+                 taxRate=25;
             } else if (grossSalary<28800){
                 taxRate=40;
             } else if (grossSalary<49840){

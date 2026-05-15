@@ -1,13 +1,14 @@
 public class Person {
 
-    private static int counter;
+    private static int counter=0;
     private int personNumber;
     private String firstName;
     private String lastName;
     private Company company;
 
     public Person(String firstName, String lastName) {
-        personNumber=++counter;
+        ++counter;
+        personNumber=counter;
         this.firstName = firstName;
         this.lastName = lastName;
     }

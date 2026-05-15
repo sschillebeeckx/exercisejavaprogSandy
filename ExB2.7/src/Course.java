@@ -42,7 +42,7 @@ public class Course {
         return numberOfDays*pricePerDay;
     }
 
-    public double calculateTotalPrice(int reduction){
-        return this.calculateTotalPrice()*(1-reduction/100.);
+    public double calculateTotalPrice(int reductionPercentage){
+        return this.calculateTotalPrice()*(1-reductionPercentage/100.);
     }
 }

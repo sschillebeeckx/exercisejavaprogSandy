@@ -6,7 +6,7 @@ public class Person {
     private String lastName;
     private Company company;
     private String[] hobbies=new String[10];
-    private int hobbiesIndex;
+    private int numberOfHobbies;
 
     public Person(){
         personNumber=++counter;
@@ -72,26 +72,17 @@ public class Person {
     }
 
     public void addHobby(String hobby){
-        hobbies[hobbiesIndex++]=hobby;
-        //hobbiesIndex++;
+        hobbies[numberOfHobbies++]=hobby;
+        //numberOfHobbies++;
         System.out.println("calling adding 1");
     }
 
     public void addHobbies(String... hobbies){
         System.out.println("calling adding multiple");
         for (String hobby:hobbies){
-            this.addHobbies(hobby);
-        }
-
-
-
-    }
-
-    /*public void addHobbies(String... hobbies){
-        for (String hobby:hobbies){
             this.addHobby(hobby);
         }
-    }*/
+    }
 
     public void printInfo(){
         Company c = company;

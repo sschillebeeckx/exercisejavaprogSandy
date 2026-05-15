@@ -1,6 +1,6 @@
 public class Person {
 
-    private static int counter;
+    private static int counter=0;
     private int personNumber;
     private String firstName;
     private String lastName;
@@ -59,7 +59,8 @@ public class Person {
 
     public void printInfo(){
         Company c = company;
-        System.out.println("Person " + personNumber + ": " +firstName + " " + lastName + ((c!=null)?" works for " + c.getName() +"." : " is not linked to a company for the moment."));
+        System.out.println("Person " + personNumber + ": " +firstName + " " + lastName
+                + ((c!=null)?" works for " + c.getName() +"." : " is not linked to a company for the moment."));
     }
 
     public void attendCourse(Course c){

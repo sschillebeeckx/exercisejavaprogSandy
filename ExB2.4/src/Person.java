@@ -40,6 +40,11 @@ public class Person {
 
     public void printInfo(){
         Company c = company;
+     /*   if (c==null){
+            System.out.println(firstName + " " + lastName);
+        } else {
+            System.out.println(firstName + " " + lastName + " and works for " + c.getName());
+        }*/
         System.out.println(firstName + " " + lastName + ((c!=null)?" works for " + c.getName() +"." : " is not linked to a company for the moment."));
     }
 }

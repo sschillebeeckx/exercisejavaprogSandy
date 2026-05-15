@@ -4,6 +4,7 @@ public class Test {
         Course c = new Course("Java",5,500);
 
         c.printInfo();
+        //c.setPricePerDay(400.);
         double totalPrice=c.calculateTotalPrice();
         System.out.println("The total price is " + totalPrice +".");
 

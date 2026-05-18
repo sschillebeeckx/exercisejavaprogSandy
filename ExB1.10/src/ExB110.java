@@ -1,3 +1,5 @@
+package bla;
+
 public class ExB110 {
 
     public static void main(String[] args) {

@@ -26,8 +26,8 @@ public class Test {
        Consultancy consultancy = new Consultancy();
         Service[] services = {companySession1,consultancy,companySession2,publicSession};
         for (Service s : services){
-            if (s instanceof Session){
-                ((Session) s).printInfo();
+            if (s instanceof Session se){
+                se.printInfo();
                 System.out.println(((Session) s).getOrganizer());
             }
             System.out.println("The price for the " +s.getClass().getSimpleName() + " is " +s.calculatePrice() +".\n");
